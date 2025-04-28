@@ -9,13 +9,29 @@
     <script src="./script.js"></script>
 </head>
 
+<body>
 
     <div class="container">
+
     <h3>Générer un mot de passe entre 12 et 128 caractères</h3>
     <input type="number" id="length" min="12" max="128">
-    <button onclick="generate()">Générer le mot de passe</button>
-    <div id="password" class="result"></div>
+
+    <div class="checkbox-group">
+        <label><input type="checkbox" id="includeLowercase" checked> Lettres minuscules</label>
+        <label><input type="checkbox" id="includeUppercase" checked> Lettres majuscules</label>
     </div>
-    
+
+    <div class="checkbox-group">
+        <label><input type="checkbox" id="includeNumbers" checked> Chiffres</label>
+        <label><input type="checkbox" id="includeSymbols" checked> Caractères spéciaux</label>
+    </div>
+
+    <button onclick="generate()">Générer le mot de passe</button>
+
+    <div id="password" class="result"></div>
+
+    </div>
+
 </body>
+
 </html>

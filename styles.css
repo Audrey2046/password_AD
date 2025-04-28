@@ -17,10 +17,8 @@ body {
 }
 
 button {
-    padding: 10px 20px;
     font-size: 16px;
     border: none;
-    margin-left: 20px;
     border-radius: 5px;
     background-color: #4CAF50;
     color: white;
@@ -36,7 +34,7 @@ button:hover {
     padding: 10px;
     background-color: #e9ecef;
     border-radius: 5px;
-    min-height: 50px;
+    min-height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,9 +42,28 @@ button:hover {
 
 input {
     width: 100px;   
-    height: 10px;   
+    height: 15px;   
     font-size: 16px; 
     padding: 10px;   
     border: 2px solid #ccc;  
     border-radius: 5px;
+}
+
+input, button, label {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+#password {
+    margin-top: 30px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
 }
